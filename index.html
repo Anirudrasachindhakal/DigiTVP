@@ -21,7 +21,10 @@
             box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
         }
         .btn {
-            display: block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
             margin: 10px auto;
             padding: 15px;
             width: 100%;
@@ -39,8 +42,7 @@
             opacity: 0.8;
         }
         img {
-            max-width: 80px;
-            margin: 10px auto;
+            max-width: 40px;
         }
         @media (max-width: 600px) {
             .container {
@@ -49,21 +51,29 @@
             }
             .btn {
                 font-size: 16px;
+                padding: 12px;
+            }
+            img {
+                max-width: 30px;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Google_Maps_Logo.svg" alt="Google Reviews">
+        <img src="https://risingstarreviews.com/wp-content/uploads/google-review-link.jpg" alt="Google Reviews">
         <h2>Open Your Preferred Platform</h2>
-        <a class="btn google" href="https://search.google.com/local/writereview?placeid=ChIJlw4KKAA9KToRCfgV02UpnXA" target="_blank">Open Google Reviews</a>
+        <a class="btn google" href="https://search.google.com/local/writereview?placeid=ChIJlw4KKAA9KToRCfgV02UpnXA" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Google_Reviews_Icon.svg" alt="Google Icon"> Open Google Reviews
+        </a>
         
-        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo">
-        <a class="btn facebook" href="https://www.facebook.com/truevalueproperty" target="_blank">Open Facebook Page</a>
+        <a class="btn facebook" href="https://www.facebook.com/truevalueproperty.fb" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo"> Open Facebook Page
+        </a>
         
-        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
-        <a class="btn instagram" href="https://www.instagram.com/true_valueproperty" target="_blank">Open Instagram Page</a>
+        <a class="btn instagram" href="https://www.instagram.com/true_valueproperty?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo"> Open Instagram Page
+        </a>
     </div>
 </body>
 </html>
